@@ -39,6 +39,6 @@ Oracle VM VirtualBox                            Oracle.VirtualBox            7.0
 .NOTES
     -> Author : Sanjeev Stephan Murmu
     -> Created On : 8th June 2023
-    -> Learn More About Winget (https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+    -> Learn More About Winget(https://learn.microsoft.com/en-us/windows/package-manager/winget/)
  
 ```
