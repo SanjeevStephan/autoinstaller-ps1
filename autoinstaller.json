@@ -1,0 +1,193 @@
+{
+    "info":
+    {
+        "author":"Sanjeev Stephan Murmu",
+        "script": "autoinstaller.ps1",
+        "json": "autoinstaller.json",
+        "desc":"AutoInstaller using the winget tool"
+    },
+    "settings":
+    {
+        "search" : "YES",
+        "install" : "NO"
+    },
+    "packages":
+    [
+        {
+            "install"   : "NO",
+            "name"    : "Brave",
+            "pkg_id"  : "Brave.Brave",
+            "version" : "114.1.52.122",
+            "source"  : "winget",
+            "desc"    : "Browser for privacy"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "cURL",
+            "pkg_id"  : "cURL.cURL",
+            "version" : "8.0.1",
+            "source"  : "winget",
+            "desc"    : "Browser for privacy"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "DirectX",
+            "pkg_id"  : "Microsoft.DirectX",
+            "version" : "9.29.1974.1",
+            "source"  : "winget",
+            "desc"    : "DirectX Runtime Environment"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Docker Desktop",
+            "pkg_id"  : "Docker.DockerDesktop",
+            "version" : "4.20.1",
+            "source"  : "winget",
+            "desc"    : "Dockerized Container Engine"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Git",
+            "pkg_id"  : "Git.Git",
+            "version" : "2.41.0",
+            "source"  : "winget",
+            "desc"    : "Git CLI"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "GitHub Desktop",
+            "pkg_id"  : "GitHub.GitHubDesktop",
+            "version" : "3.2.3",
+            "source"  : "winget",
+            "desc"    : "Git CLI"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "KeePass Desktop",
+            "pkg_id"  : "DominikReichl.KeePass",
+            "version" : "2.54.0",
+            "source"  : "winget",
+            "desc"    : "Open-Source Offline Password Manager"
+        },
+        {
+            "install"   :"NO",
+            "name"    : "Microsoft Edge",
+            "pkg_id"  : "Microsoft.Edge",
+            "version" : "113.0.1774.57",
+            "source"  : "winget",
+            "desc"    : "Windows Default Browser wit Bing AI"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Microsoft Visual Studio Code",
+            "pkg_id"  : "Microsoft.VisualStudioCode",
+            "version" : "1.78.2",
+            "source"  : "winget",
+            "desc"    : "Browser for privacy"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Microsoft Visual C++ 2015-2022 Redistributable",
+            "pkg_id"  : "Microsoft.VCRedist.2015+.x64",
+            "version" : "14.36.32532.0",
+            "source"  : "winget",
+            "desc"    : ""
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Nmap",
+            "pkg_id"  : "Insecure.Nmap",
+            "version" : "7.80",
+            "source"  : "winget",
+            "desc"    : "Terminal Text Editor"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Nano",
+            "pkg_id"  : "GNU.Nano",
+            "version" : "2.7.5",
+            "source"  : "winget",
+            "desc"    : "Terminal Text Editor"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Node.js LTS",
+            "pkg_id"  : "OpenJS.NodeJS.LTS",
+            "version" : "18.16.0",
+            "source"  : "winget",
+            "desc"    : "JavaScript Development Framework"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Notion",
+            "pkg_id"  : "Notion.Notion",
+            "version" : "2.0.41",
+            "source"  : "winget",
+            "desc"    : "Notepad for Productivity"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "OpenSSH Beta",
+            "pkg_id"  : "Microsoft.OpenSSH.Beta",
+            "version" : "9.2.2.0",
+            "source"  : "winget",
+            "desc"    : "Secure Shell Protocol"
+        },
+        {
+            "install"   :"NO",
+            "name"    : "Oracle VM VirtualBox",
+            "pkg_id"  : "Oracle.VirtualBox",
+            "version" : "7.0.8",
+            "source"  : "winget",
+            "desc"    : "Run OSes in Virtual Machines"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "OBS Studio",
+            "pkg_id"  : "OBSProject.OBSStudio",
+            "version" : "29.1.2",
+            "source"  : "winget",
+            "desc"    : "OpenSource Desktop Screen Recorder"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Python 3.11",
+            "pkg_id"  : "Python.Python.3.11",
+            "version" : "3.11.3",
+            "source"  : "winget",
+            "desc"    : "Python Scripting Language"
+        },
+        {
+            "install"   :"NO",
+            "name"    : "Power Automate for desktop",
+            "pkg_id"  : "Microsoft.PowerAutomateDesktop",
+            "version" : "2.32.111.23124",
+            "source"  : "winget",
+            "desc"    : "Automate Anything GUI"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "PowerToys (Preview)",
+            "pkg_id"  : "Microsoft.PowerToys",
+            "version" : "0.70.1",
+            "source"  : "winget",
+            "desc"    : "Windows Default Toys for Productivity"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Wget2",
+            "pkg_id"  : "GNU.Wget2",
+            "version" : "2.0.1",
+            "source"  : "winget",
+            "desc"    : "Windows Default Command Line Shell Terminal"
+        },
+        {
+            "install"   : "NO",
+            "name"    : "Windows Terminal",
+            "pkg_id"  : "Microsoft.WindowsTerminal",
+            "version" : "1.16.10261.0",
+            "source"  : "winget",
+            "desc"    : "Windows Default Command Line Shell Terminal"
+        }
+    ]
+}
