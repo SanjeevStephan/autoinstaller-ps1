@@ -17,7 +17,7 @@ Install Software Packages using winget tool on the window 11 in powershell from 
     This Script will install the following software packages on the window system
     using [winget] window-package-installer
 
-Name                                     Id                        Version          Match               
+Name                                     Id                        Version          Match
 -----------------------------------------------------------------------------------------------
 
 PowerShell                                      Microsoft.PowerShell            7.3.4.0   
