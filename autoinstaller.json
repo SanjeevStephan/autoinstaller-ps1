@@ -62,6 +62,22 @@
             "desc"    : "Git CLI"
         },
         {
+            "install"   : "YES",
+            "name"    : "GNU Privacy Guard",
+            "pkg_id"  : "GnuPG.GnuPG",
+            "version" : "2.4.2",
+            "source"  : "winget",
+            "desc"    : "Open-Source Encryption Tool CLI"
+        },
+        {
+            "install"   : "YES",
+            "name"    : "Gpg4win",
+            "pkg_id"  : "GnuPG.Gpg4win",
+            "version" : "4.1.0",
+            "source"  : "winget",
+            "desc"    : "Open-Source Encryption Tool GUI"
+        },
+        {
             "install"   : "NO",
             "name"    : "KeePass Desktop",
             "pkg_id"  : "DominikReichl.KeePass",
