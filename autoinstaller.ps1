@@ -23,9 +23,9 @@ Power Automate for desktop                      Microsoft.PowerAutomateDesktop  
 PowerToys (Preview)                             Microsoft.PowerToys             0.70.1                                 winget
 Microsoft Visual C++ 2015-2022 Redistributable… Microsoft.VCRedist.2015+.x64    14.36.32532.0                          winget
 
+Brave                                           Brave.Brave                  114.1.52.122                              winget
 Git                                             Git.Git                      2.41.0                                    winget
 Python 3.11                                     Python.Python.3.11           3.11.3          Command: python           winget
-Brave                                           Brave.Brave                  114.1.52.122                              winget
 Node.js LTS                                     OpenJS.NodeJS.LTS            18.16.0         Tag: nodejs               winget
 Notion                                          Notion.Notion                2.0.41                                    winget
 Oracle VM VirtualBox                            Oracle.VirtualBox            7.0.8                                     winget
