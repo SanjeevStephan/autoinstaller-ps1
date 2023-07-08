@@ -30,6 +30,14 @@
             "desc"    : "Browser for privacy"
         },
         {
+            "install"   : "YES",
+            "name"    : "calibre",
+            "pkg_id"  : "calibre.calibre",
+            "version" : "6.22.0",
+            "source"  : "winget",
+            "desc"    : "EPub Book Reader"
+        },
+        {
             "install"   : "NO",
             "name"    : "cURL",
             "pkg_id"  : "cURL.cURL",
@@ -214,7 +222,7 @@
             "desc"    : "Windows Default Toys for Productivity"
         },
         {
-            "install"   : "YES",
+            "install"   : "NO",
             "name"    : "PowerISO",
             "pkg_id"  : "PowerSoftware.PowerISO",
             "version" : "8.5",
