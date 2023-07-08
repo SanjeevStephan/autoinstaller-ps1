@@ -36,7 +36,8 @@ Oracle VM VirtualBox                            Oracle.VirtualBox            7.0
     -> Learn More About Winget (https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 #> 
 
-$MAIN_DIR = "$($env:github)\autoinstaller-winget"
+#$MAIN_DIR = "$($env:github)\autoinstaller-ps1"
+$MAIN_DIR = "$home/Documents/GitHub/autoinstaller-ps1"
 $SCRIPT_NAME = $MyInvocation.MyCommand.Name 
 #$CONSOLE_JSON_FILEPATH = "$MAIN_DIR\console.json"
 $AUTOINSTALLER_JSON_FILEPATH = "$MAIN_DIR\autoinstaller.json"
@@ -44,9 +45,10 @@ $LOCATION = Get-Location
 #$CONSOLE_JSON = Get-Content -Raw $CONSOLE_JSON_FILEPATH | ConvertFrom-Json
 $AUTOINSTALLER_JSON = Get-Content -Raw $AUTOINSTALLER_JSON_FILEPATH | ConvertFrom-Json
 $AUTOINSTALLER_SETTINGS =  $AUTOINSTALLER_JSON.settings
+$OS_INFO = $AUTOINSTALLER_JSON.info.os
 
 Write-Host "├── $SCRIPT_NAME" -ForegroundColor White
-
+Write-Host "├ OS ] $($AUTOINSTALLER_JSON.info.os)"
 Write-Host "├ JSON ] $($AUTOINSTALLER_JSON.info.json)"
 Write-Host "├ SCRIPT ] $($AUTOINSTALLER_JSON.info.script)"
 Write-Host "├ DESC ] $($AUTOINSTALLER_JSON.info.desc)"
@@ -68,6 +70,7 @@ for ($i = 0; $i -le $Total_Packages; $i++)
   # echo "INside the loop"
     $Packages_Name      = $Packages_to_install[$i].name
     $Packages_ID        = $Packages_to_install[$i].pkg_id
+    $Packages_NAME        = $Packages_to_install[$i].pkg_name
     $Packages_Version   = $Packages_to_install[$i].version
     $install_pkg        = $Packages_to_install[$i].install
 
@@ -77,16 +80,34 @@ for ($i = 0; $i -le $Total_Packages; $i++)
 
         if($AUTOINSTALLER_SETTINGS.search -eq "YES")
         {
-            Write-Host "[ Searching ] $Packages_Name with Package ID [" -NoNewline -ForegroundColor Cyan
-            Write-Host " $Packages_ID " -ForegroundColor Black -BackgroundColor Cyan -NoNewline
-            Write-Host "]"
-            
-            Invoke-Expression "winget search $Packages_ID"
+  
+           # Kindly Specify Which Operating-System you are on in the autoinstaller.json file        
+            if($OS_INFO -eq "Linux") {  
+
+                Write-Host "[ Searching ] $Packages_Name with Package Name [" -NoNewline -ForegroundColor Cyan
+                Write-Host " $Packages_Name " -ForegroundColor Black -BackgroundColor Cyan -NoNewline
+                Write-Host "]"    
+                Invoke-Expression "apt search $Packages_NAME" 
+
+            }
+            elseif ($OS_INFO -eq "Window") {  
+                
+                Write-Host "[ Searching ] $Packages_Name with Package ID [" -NoNewline -ForegroundColor Cyan
+                Write-Host " $Packages_ID " -ForegroundColor Black -BackgroundColor Cyan -NoNewline
+                Write-Host "]"
+                Invoke-Expression "winget search $Packages_ID" 
+            }
+            else { Write-Host "[ Error ] OS Not Specified in the JSON"}
+
+
         }
 
         Write-Host "[ Installing ] $Packages_Name " -ForegroundColor Green
     
-        Invoke-Expression "winget install --id $Packages_ID --source winget"
+        # Kindly Specify Which Operating-System you are on in the autoinstaller.json file
+        if($OS_INFO -eq "Linux") { Invoke-Expression "sudo apt install $Packages_NAME -y" }
+        elseif ($OS_INFO -eq "Window") {  Invoke-Expression "winget install --id $Packages_ID --source winget" }
+        else { Write-Host "[ Error ] OS Not Specified in the JSON"}
         
         Write-Host "[ Installed ] $Packages_Name " -ForegroundColor Black -BackgroundColor Cyan
     
