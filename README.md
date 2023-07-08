@@ -1,5 +1,5 @@
-# autoinstaller-winget
-Install Software Packages using winget tool on the window 11 in powershell from the json-list
+# autoinstaller-ps1
+Install Windows Softwares & Linux Packages using winget tool on the window 11 and apt tool on linux in powershell from the json-list 
 
 ```
 
