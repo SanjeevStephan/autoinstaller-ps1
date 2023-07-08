@@ -36,8 +36,8 @@ Oracle VM VirtualBox                            Oracle.VirtualBox            7.0
     -> Learn More About Winget (https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 #> 
 
-#$MAIN_DIR = "$($env:github)\autoinstaller-ps1"
-$MAIN_DIR = "$home/Documents/GitHub/autoinstaller-ps1"
+$MAIN_DIR = "$($env:github)\autoinstaller-ps1"
+#$MAIN_DIR = "$home/Documents/GitHub/autoinstaller-ps1"
 $SCRIPT_NAME = $MyInvocation.MyCommand.Name 
 #$CONSOLE_JSON_FILEPATH = "$MAIN_DIR\console.json"
 $AUTOINSTALLER_JSON_FILEPATH = "$MAIN_DIR\autoinstaller.json"
