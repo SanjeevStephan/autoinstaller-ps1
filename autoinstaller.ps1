@@ -5,7 +5,7 @@
  / ___ \ |_| | || (_) |  | || | | \__ \ || (_| | | |  __/ |
 /_/   \_\__,_|\__\___/  |___|_| |_|___/\__\__,_|_|_|\___|_|
 
-                   Р        Created By Sanjeev Stephan Murmu
+                           Created By Sanjeev Stephan Murmu
 .SYNOPSIS
     Auto-Installer for Windows 11 using winget
 
