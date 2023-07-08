@@ -4,7 +4,7 @@
         "author":"Sanjeev Stephan Murmu",
         "script": "autoinstaller.ps1",
         "json": "autoinstaller.json",
-        "os" : "Window",
+        "os" : "Linux",
         "desc":"AutoInstaller using the winget tool"
 
     },
